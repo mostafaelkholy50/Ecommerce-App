@@ -61,7 +61,7 @@
                                     </div>
 
                                     <div class="col-12 text-center">
-                                        <p class="small mb-0">Don't have an account? <a href="{{ route('admin.register') }}"
+                                        <p class="small mb-0">Don't have an account? <a href="{{ route('admin.register.show') }}"
                                                 class="text-primary fw-semibold">Create an account</a></p>
                                     </div>
                                 </form>
