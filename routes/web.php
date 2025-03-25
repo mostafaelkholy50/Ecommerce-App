@@ -54,9 +54,7 @@ Route::middleware('auth')->name('user.')->prefix('/user')->group(function () {
     Route::post('/store/comment', [CommentController::class, 'store'])->name('store.comment');
 });
 Route::view('/admin/login/show', 'admin.login')->name('admin.login.show');
-Route::view('/admin/register/show', 'admin.register')->name('admin.register.show');
 Route::post('/admin/login', [AdminController::class, 'login'])->name('admin.login');
-Route::post('/admin/register', [AdminController::class, 'store'])->name('admin.register');
 
 
 Route::middleware(AdminMiddleware::class)->prefix('/admin')->name('admin.')->group(function () {
